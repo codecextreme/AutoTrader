@@ -1,0 +1,243 @@
+.navbar {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-item {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-link {
+  padding: 1rem;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.3s ease;
+}
+
+.dropdown-wrapper.active {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+
+.dropdown-wrapper.close {
+  transform: scaleY(0);
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 1s ease;
+}
+
+
+
+
+/* Mini Dropdown*/
+
+.account-dropdown {
+  width: 150px;
+  right: 20;
+  left: auto;
+  background: white;
+
+}
+
+.account-dropdown-list {
+  list-style: none;
+  padding: 16px 0;
+  margin: 0;
+  border-radius: 4px;
+  width: 140px;
+  box-shadow: 0 4px 8px rgba(23, 22, 22, 0.2);
+}
+
+
+.account-dropdown-list li {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.account-dropdown-list li:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+
+.account-dropdown-list li {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-wrapper.active .account-dropdown-list li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-wrapper.active .account-dropdown-list li:nth-child(1) {
+  transition-delay: 0.5s;
+}
+.dropdown-wrapper.active .account-dropdown-list li:nth-child(2) {
+  transition-delay: 0.7s;
+}
+
+
+
+
+
+
+
+
+
+.arrow-icon {
+  margin-left: 4px;
+  transition: transform 1s ease;
+}
+
+.arrow-icon.rotated {
+  transform: rotate(180deg);
+  transition: transform 0.7s ease;
+}
+
+.arrow-icon.not {
+  transform: rotate(0deg);
+  transition: transform 0.7s ease;
+}
+
+.top-nav {
+  background-color: #3a3a3a;
+  display: flex;
+  padding: 10px 20px;
+  color: white;
+  font-size: 14px;
+  height: 20px;
+  position: relative;
+}
+
+.manu {
+  margin-left: 210px;
+  display: flex;
+  gap: 26px;
+}
+
+.manu a {
+  cursor: pointer;
+  color: #d3d3d3; 
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.manu a:hover{
+  color: white;
+}
+
+.manu a.active {
+  color: white;
+}
+
+.logo-container {
+  position: absolute;
+  top: -90px;
+  z-index: 2;
+}
+
+.logo-container img {
+  height: 250px;
+  width: 250px;
+}
+
+.bottom-nav {
+  background-color: #c00;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 50px;
+}
+
+.bottom-nav .center {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-size: 16px;
+  margin-left: 220px;
+}
+
+.bottom-nav .center span {
+  white-space: nowrap;
+  flex-shrink: 1;
+}
+
+.new-badge {
+  background: #ffffff;
+  color: #007bff;
+  padding: 1px 6px;
+  font-size: 10px;
+  margin-top: 3px;
+  border-radius: 2px;
+  margin-left: 4px;
+}
+
+.bottom-nav .right1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.account-btn {
+  background-color: #e40000;
+  color: white;
+  border: none;
+  width: 120px;
+  height: 30px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3px;
+}
+
+.lang {
+  font-weight: bold;
+}
+
+
+
+.feedback-button {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 20px 10px;
+  writing-mode: vertical-rl;
+  cursor: pointer;
+}

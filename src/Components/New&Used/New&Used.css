@@ -1,0 +1,65 @@
+.popular-trucks-container {
+  background-color: #f4f4f4;
+  padding: 30px 40px 90px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.tab-button3 {
+  flex: 1;
+  padding: 12px 20px;
+  background-color: white;
+  border: none;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-button3.active {
+  border-bottom: 4px solid #c40000;
+}
+
+.tab-button3:not(.active):hover {
+  background-color: #ffffff;
+}
+
+.tab-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.truck-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  max-width: 90%;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.truck-item {
+  font-size: 18px;
+  font-weight: 500;
+  color: #111;
+  width: 200px;
+  text-align: start;
+}
+
+

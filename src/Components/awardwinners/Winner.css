@@ -1,0 +1,96 @@
+.award-winner {
+  max-width: 100%;
+  background-color: rgb(250, 245, 245);
+  padding: 30px 50px;
+  text-align: center;
+}
+
+.award-winner h1 {
+  margin-bottom: 10px;
+}
+
+.award-winner h4 {
+  cursor: pointer;
+  color: rgb(11, 162, 222);
+}
+
+.sale-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.sale-box {
+  flex: 1 1 calc(25%); 
+  max-width: calc(22% - 20px);
+  min-width: 252px;
+  background-color: white;
+  border: 1px solid rgb(243, 189, 189);
+  border-radius: 6px;
+  padding: 10px;
+  text-align: start;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 270px;
+}
+
+.sale-box span {
+  font-size: 10px;
+  font-weight: 700;
+  color: green;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.sale-box h5 {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.sale-box p {
+  font-size: 12px;
+  color: rgb(11, 162, 222);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.sale-box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.sale-btn {
+  width: 80%;
+  height: 40px;
+  border-radius: 50px;
+  border: 2px solid rgb(11, 92, 222);
+  margin: 0 auto;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sale-btn:hover {
+  background-color: rgb(11, 92, 222);
+  color: white;
+}
+
+.main-btn {
+  background-color: rgb(11, 92, 222);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.main-btn:hover {
+  background-color: rgb(8, 70, 170);
+}

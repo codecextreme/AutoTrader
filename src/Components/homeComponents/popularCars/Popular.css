@@ -1,0 +1,160 @@
+.slider-container {
+  padding: 10px 50px;
+  border-radius: 8px;
+  max-width: 100%;
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.tabs {
+  display: flex;
+  gap: 0;
+  border: 1px solid #ddd;
+  overflow-x: auto;
+  background-color: white;
+  max-width: 100%;
+}
+
+.tab {
+  padding: 10px 20px;
+  border-right: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 14px;
+  border-bottom: 3px solid transparent;
+}
+
+.tab.active {
+  font-weight: bold;
+  border-bottom: 3px solid red;
+}
+
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.vehicle-card1 {
+  min-width: 274px;
+  max-width: 274px;
+  background: white;
+  margin-right: 20px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.vehicle-card1 img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.vehicle-card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.link{
+    padding: 10px 15px;
+    border-top: 1px solid rgb(227, 219, 219);
+}
+
+.links a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-button {
+  position: absolute;
+  top: 40%;
+  width: 30px;
+  height: 60px;
+  background: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.nav-button.prev {
+  left: 0px;
+}
+
+.nav-button.next {
+  right: 0px;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #ddd;
+  border-radius: 3px;
+  margin-top: 15px;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #7b7e82;
+  border-radius: 3px;
+  width: 0%;
+  transition: width 0.5s ease;
+}
+
+.logo-sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 30px;
+}
+
+.logo-box{
+    height: 25px;
+    width: 25px;
+    color: white;
+    background-color: black;
+    margin-right: 2px;
+    text-align: center;
+}
+
+.logo-box h2{
+    font-weight: 900;
+}
+
+.logo-box1{
+    height: 24px;
+    width: 24px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    margin-right: 2px;
+    text-align: center;
+    border: 1px solid black;
+    overflow: hidden;
+}

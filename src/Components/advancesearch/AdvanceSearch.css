@@ -1,0 +1,94 @@
+.search-box3 {
+  background-color: #333;
+  padding: 20px;
+  width: 90%;
+  box-sizing: border-box;
+  color: white;
+  position: relative;
+  top: -70px;
+  padding-bottom: 50px;
+  margin-left: 60px;
+}
+
+.top-bar3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+
+}
+
+.toggles3 {
+  display: flex;
+  position: absolute;
+  margin-left: 60px;
+  position: relative;
+  top: -70px;
+}
+
+.toggle-btn3 {
+  background-color: #555;
+  color: white;
+  border: none;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+
+}
+
+.toggle-btn.active3 {
+  background-color: #333;
+  color: white;
+  border: none;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.checkboxes3 {
+  display: flex;
+  gap: 10px;
+  
+}
+
+.checkboxes3 input{
+  width: 22px;
+  height: 22px;
+}
+
+.checkboxes3 label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.bottom-bar3 {
+  display: flex;
+  gap: 6px;
+}
+
+.bottom-bar3 select,
+.bottom-bar3 input,
+.bottom-bar3 .search-btn3 {
+  font-size: 14px;
+  width: 20%;
+  height: 50px;
+}
+
+.bottom-bar3 select,
+.bottom-bar3 input {
+  border: none;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+.bottom-bar3 .search-btn3 {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

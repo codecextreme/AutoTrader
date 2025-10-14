@@ -1,0 +1,188 @@
+.sell-wrapper {
+  margin-top: 30px;
+  background-color: #f8f3f3;
+}
+
+.sell-tabs {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  justify-content: center;
+}
+
+.sell-tabs button {
+  padding: 12px 20px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s;
+}
+
+.sell-tabs button.active {
+  border-bottom: 3px solid red;
+  color: black;
+  font-weight: bold;
+}
+
+.sell-content {
+  display: flex;
+  margin-top: 10px;
+}
+
+.sidebar {
+  margin-top: 50px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  height: 60px;
+  background-color: #f8f3f3;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #333;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.9s ease;
+}
+
+.sidebar-item:hover {
+box-shadow: 
+  -4px 0 6px -1px rgba(0, 0, 0, 0.1),   /* Left shadow */
+   0 -4px 6px -1px rgba(0, 0, 0, 0.1),   /* Top shadow */
+   0 4px 6px -1px rgba(0, 0, 0, 0.1);    /* Bottom shadow */
+
+}
+
+.sidebar-item.active {
+  background: linear-gradient(13deg, #d03a0c 52%, #f70b0b 50%);
+  color: white;
+
+}
+
+.sidebar-item.active::after {
+  content: '';
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 12px solid #f70b0b;
+}
+
+.main-content {
+  flex: 1;
+  width: 80%;
+  padding: 40px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid #bcb5b5;
+  background-color: #ffffff;
+}
+
+.content-fade {
+  animation: fadeIn 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+ 
+}
+
+.content-fade h1{
+    margin: 0;
+}
+
+.deal-box{
+    width: 38.5%;
+    height: 130px;
+    background-color: #f5f2f2;
+    margin-top: 24px;
+    padding: 40px;
+    text-align: start;
+}
+
+.deal-box h3{
+    margin-top: 10px;
+}
+
+.deal-box p{
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f8f3f3;
+}
+
+.sidebar-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+  width: 90%;
+}
+
+.sidebar-extra {
+  text-align: start;
+}
+
+.sidebar-extra p {
+  font-size: 14px;
+  color: #666;
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.sidebar-extra h3{
+    margin-left: 46px;
+}
+
+.sidebar-btn {
+    width: 90%;
+    height: 45px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(25, 99, 219);
+  border: 2px solid rgb(54, 69, 237);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-btn:hover {
+  background-color: rgb(30, 70, 216);
+  color: white;
+}
+
+
+
+
+
+
+

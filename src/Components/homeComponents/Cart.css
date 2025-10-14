@@ -1,0 +1,137 @@
+.sell-section {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left {
+  flex: 1;
+  width: 300px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.left h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.car-container {
+  position: relative;
+  height: 250;
+}
+
+.car-image {
+  width: 100%;
+  max-width: 400px;
+}
+
+.offer {
+  position: absolute;
+  background: white;
+  padding: 6px 16px;
+  border-radius: 25px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.offer::before {
+  content: "$";
+  color: #007bff;
+  font-weight: bold;
+}
+
+.offer-top-left {
+  top: -10px;
+  left: 30%;
+}
+
+.offer-middle-left {
+  top: 40px;
+  left: -20px;
+}
+
+.offer-bottom-right {
+  bottom: -10px;
+  right: 10px;
+}
+
+.right {
+  flex: 2;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+.card {
+  flex: 1;
+  width: 280px;
+  background: #f9f9f9;
+  border-radius: 2px;
+  height: 250px;
+  padding: 30px;
+}
+
+.dealership {
+  background: #f0f7ff;
+  border-top: 5px solid #007bff;
+}
+
+.private-sale {
+  background: #fafafa;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.card ul li {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.card ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #28a745;
+}
+
+.tag {
+  position: absolute;
+  top: -15px;
+  left: 100px;
+  background: black;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.outline-btn {
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 2px solid #007bff;
+  background: white;
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
