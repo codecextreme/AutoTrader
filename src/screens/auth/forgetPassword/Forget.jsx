@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { forgotPassword, resetForgotPasswordState } from "../../../redux/slices/forgetSlice";
-import "./forget.css";
+import "./Forget.css";
 
 export default function Forget() {
   const navigate = useNavigate();
