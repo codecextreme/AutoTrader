@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Navbar from "../../Components/navbar/Navbar";
-import auto from "../../assets/media/images/auto.png";
+import auto from "../../assets/media/images/Auto.png";
 import Searchbox from "../../Components/homeComponents/Searchbox";
 import Cart from "../../Components/homeComponents/Cart";
 import car from "../../assets/media/images/car.png";
